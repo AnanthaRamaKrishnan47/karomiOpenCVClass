@@ -2,18 +2,18 @@
 # by doing simple point operations (i.e addition or multiplication)
 # http://cartucho.github.io/tutorial_basic_linear_transform.html
 import numpy as np
-import cv2 as openCv
+import cv2 as cv
 
 contrast = float(input("Enter the contrast amount value should be around 1.0-3.0"))
 brightness = int(input("Enter the brightness amount value should be around 1 - 100"))
 
-monkey_Image = openCv.imread(r"C:\Users\arkma\PycharmProjects\karomiOpenCVClass\Resources\Images\mandarin_monkey.PNG")
+monkey_Image = cv.imread(r"C:\Users\arkma\PycharmProjects\karomiOpenCVClass\Resources\Images\mandarin_monkey.PNG")
 
-modC_Img = openCv.multiply(monkey_Image, np.array([contrast]))
-modB_Img = openCv.add(modC_Img, brightness)
+modC_Img = cv.multiply(monkey_Image, np.array([contrast]))
+modB_Img = cv.add(modC_Img, brightness)
 
-openCv.imshow("Original", monkey_Image)
-openCv.imshow("Modified contrast and brightness", modB_Img)
+cv.imshow("Original", monkey_Image)
+cv.imshow("Modified contrast and brightness", modB_Img)
 
-openCv.waitKey(0)
-openCv.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
