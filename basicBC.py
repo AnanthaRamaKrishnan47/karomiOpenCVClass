@@ -1,6 +1,6 @@
 # this file contains code to control brightness and contrast of an image
 # by doing simple point operations (i.e addition or multiplication)
-
+# http://cartucho.github.io/tutorial_basic_linear_transform.html
 import numpy as np
 import cv2 as openCv
 
