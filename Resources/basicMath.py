@@ -12,10 +12,10 @@ def do_something(arr_1, arr_2):
     case = int(input("Enter what operation you're going to do!"))
 
     return {
-        1: arr_1+arr_2,
-        2: arr_1-arr_2,
-        3: arr_1*arr_2,
-        4: arr_1/arr_2,
+        1: int(arr_1+arr_2),
+        2: int(arr_1-arr_2),
+        3: int(arr_1*arr_2),
+        4: int(arr_1/arr_2),
     }.get(case, "ERROR")
 
 
