@@ -31,4 +31,4 @@ try:
         print("RESULT")
         print(result)
 except KeyboardInterrupt:
-    pass
+    print("USER EXITED")
