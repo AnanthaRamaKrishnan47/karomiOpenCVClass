@@ -1,7 +1,7 @@
 # import openCV
 import cv2
 import numpy as np
-image = cv2.imread(r"C:\Users\krishnan\PycharmProjects\KaromiOpenCvClass\sample images\mandarin_monkey.PNG")
+image = cv2.imread(r"C:\Users\krishnan\PycharmProjects\karomiOpenCVClass\Resources\Images\mandarin_monkey.PNG")
 b, g, r = cv2.split(image)
 # declaring an variable of same dimension as image
 zeros = np.zeros(image.shape[:2], dtype="uint8")
