@@ -25,7 +25,6 @@ try:
         fir_arr = np.random.randint(255, size=(3, 3, 3))
         sec_arr = np.random.randint(255, size=(3, 3, 3))
         print("FIRST RANDOM ARRAY")
-
         print(fir_arr)
         print("SECOND RANDOM ARRAY")
         print(sec_arr)
