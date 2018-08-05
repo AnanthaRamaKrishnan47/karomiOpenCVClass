@@ -30,9 +30,10 @@ try:
         print("SECOND RANDOM ARRAY")
         print(sec_arr)
         result = do_something(fir_arr, sec_arr)
+        result = np.clip(result, None, 255)
         print("RESULT")
         print(result)
-        plt.imshow(result, interpolation="nearest")
+        plt.imshow(result, interpolation="none")
         plt.show()
 except KeyboardInterrupt:
     print("USER EXITED")
