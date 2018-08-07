@@ -12,7 +12,7 @@ image = cv.imread(r"C:\Users\arkma\PycharmProjects\karomiOpenCVClass\Resources\I
 # gauss = gauss.reshape(row, col, ch)
 # gauss = np.random.randint(0, 25, image.shape, dtype="uint8")
 print(image.shape)
-gauss = np.random.normal(1, 200, image.shape)
+gauss = np.random.normal(1, 100, image.shape)
 print(gauss)
 noisy = image + gauss
 cv.imshow("Noiseless image", image)
