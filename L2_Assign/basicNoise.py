@@ -10,7 +10,10 @@ image = cv.imread(r"C:\Users\arkma\PycharmProjects\karomiOpenCVClass\Resources\I
 # sigma = var*.5
 # gauss = np.random.normal(mean, sigma, (row, col, ch))
 # gauss = gauss.reshape(row, col, ch)
-gauss = np.random.randint(0, 25, image.shape, dtype="uint8")
+# gauss = np.random.randint(0, 25, image.shape, dtype="uint8")
+print(image.shape)
+gauss = np.random.normal(1, 200, image.shape)
+print(gauss)
 noisy = image + gauss
 cv.imshow("Noiseless image", image)
 cv.imshow("Noise introduced image", noisy)
