@@ -7,7 +7,7 @@ import cv2 as cv
 contrast = float(input("Enter the contrast amount value should be around 1.0-3.0"))
 brightness = int(input("Enter the brightness amount value should be around 1 - 100"))
 
-monkey_Image = cv.imread(r"C:\Users\krishnan\PycharmProjects\karomiOpenCVClass\Resources\Images\mandarin_monkey.PNG")
+monkey_Image = cv.imread(r"C:\Users\arkma\PycharmProjects\karomiOpenCVClass\Resources\Images\mandarin_monkey.PNG")
 
 modC_Img = cv.multiply(monkey_Image, np.array([contrast]))
 modB_Img = cv.add(modC_Img, brightness)
